@@ -81,16 +81,16 @@ Each User _resource_ should conform to the following structure (AKA schema):
     [X] respond with HTTP status code `500`.
     [X] return the following JSON object: `{ errorMessage: "The user information could not be retrieved." }`.
 
-[] When the client makes a `DELETE` request to `/api/users/:id`:
+[X] When the client makes a `DELETE` request to `/api/users/:id`:
 
-  [] If the _user_ with the specified `id` is not found:
+  [X] If the _user_ with the specified `id` is not found:
 
-    [] respond with HTTP status code `404` (Not Found).
-    [] return the following JSON object: `{ message: "The user with the specified ID does not exist." }`.
+    [X] respond with HTTP status code `404` (Not Found).
+    [X] return the following JSON object: `{ message: "The user with the specified ID does not exist." }`.
 
-  [] If there's an error in removing the _user_ from the database:
-    [] respond with HTTP status code `500`.
-    [] return the following JSON object: `{ errorMessage: "The user could not be removed" }`.
+  [X] If there's an error in removing the _user_ from the database:
+    [X] respond with HTTP status code `500`.
+    [X] return the following JSON object: `{ errorMessage: "The user could not be removed" }`.
 
 [X] When the client makes a `PUT` request to `/api/users/:id`:
 
