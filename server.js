@@ -5,6 +5,7 @@ const db = require('./database');
 // #2 - instantiate and congigure server
 const server = express();
 server.use(express.json());
+server.use(cors());
 
 // #3 - decide port
 const port = 3000;
